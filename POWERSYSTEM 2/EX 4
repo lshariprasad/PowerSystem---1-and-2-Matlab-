@@ -1,0 +1,52 @@
+clc;
+clear;
+close all;
+
+% Load Data
+loadMW = [40 55 25 15 40 60];
+hours = [6 4 2 4 4 4];
+
+% Total Energy Generated
+Energy = sum(loadMW .* hours);
+
+% Average Load
+AvgLoad = Energy / 24;
+
+% Maximum Demand
+MaxDemand = max(loadMW);
+
+% Assume Connected Load = 100 MW
+ConnectedLoad = 100;
+
+% Load Factor
+LoadFactor = AvgLoad / MaxDemand;
+
+% Demand Factor
+DemandFactor = MaxDemand / ConnectedLoad;
+
+fprintf('Total Energy Generated = %.2f MWh\n',Energy);
+fprintf('Average Load = %.2f MW\n',AvgLoad);
+fprintf('Maximum Demand = %.2f MW\n',MaxDemand);
+fprintf('Load Factor = %.4f (%.2f%%)\n',LoadFactor,LoadFactor*100);
+fprintf('Demand Factor = %.4f (%.2f%%)\n',DemandFactor,DemandFactor*100);
+
+% Load Curve
+time = [0 6 10 12 16 20 24];
+
+figure;
+stairs(time,[40 55 25 15 40 60 60],'LineWidth',2);
+grid on;
+xlabel('Time (Hours)');
+ylabel('Load (MW)');
+title('Load Curve');
+
+% Load Duration Curve
+sortedLoad = sort(loadMW,'descend');
+duration = [4 4 6 4 2 4];
+
+figure;
+stairs([0 cumsum(duration)],[sortedLoad sortedLoad(end)],'LineWidth',2);
+grid on;
+xlabel('Duration (Hours)');
+ylabel('Load (MW)');
+title('Load Duration Curve');
