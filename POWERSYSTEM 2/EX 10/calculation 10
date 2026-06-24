@@ -1,0 +1,119 @@
+QUESTION 10 - THEORETICAL CALCULATION
+
+Given:
+
+Area Capacity = 1000 MW
+
+Nominal Operating Load = 450 MW
+
+Inertia Constant H = 5 sec
+
+Governor Time Constant Tg = 0.15 sec
+
+Turbine Time Constant Tt = 0.45 sec
+
+Regulation R = 5 Hz/p.u.MW
+
+Nominal Frequency = 50 Hz
+
+Load Increase = 75 MW
+
+--------------------------------------------------
+
+1. Power System Gain (Kp)
+
+Load decreases by 1% for 1% decrease in frequency
+
+D = 1
+
+Kp = 1/D
+
+Kp = 1
+
+--------------------------------------------------
+
+2. Power System Time Constant (Tp)
+
+Tp = 2H / D
+
+Tp = (2 × 5) / 1
+
+Tp = 10 sec
+
+--------------------------------------------------
+
+3. Governor Transfer Function
+
+Gg(s)
+
+= 1 / (1 + Tgs)
+
+= 1 / (1 + 0.15s)
+
+--------------------------------------------------
+
+4. Turbine Transfer Function
+
+Gt(s)
+
+= 1 / (1 + Tts)
+
+= 1 / (1 + 0.45s)
+
+--------------------------------------------------
+
+5. Power System Transfer Function
+
+Gp(s)
+
+= Kp / (1 + Tps)
+
+= 1 / (1 + 10s)
+
+≈ 1 / (10s + 0.8)
+
+--------------------------------------------------
+
+6. Feedback Gain
+
+1/R
+
+= 1/0.05
+
+= 20
+
+--------------------------------------------------
+
+7. Change in Frequency
+
+Δf = -(ΔPL)/(D + 1/R)
+
+Δf = -(75)/(1 + 20)
+
+Δf = -75/21
+
+Δf = -3.5714 MW
+
+--------------------------------------------------
+
+RESULT
+
+Power System Gain Kp = 1
+
+Power System Time Constant Tp = 10 sec
+
+Governor Transfer Function
+
+Gg(s) = 1/(0.15s+1)
+
+Turbine Transfer Function
+
+Gt(s) = 1/(0.45s+1)
+
+Power System Transfer Function
+
+Gp(s) = 1/(10s+1)
+
+Feedback Gain = 20
+
+Frequency deviation = -3.5714
