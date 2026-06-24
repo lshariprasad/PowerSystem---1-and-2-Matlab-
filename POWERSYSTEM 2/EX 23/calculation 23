@@ -1,0 +1,61 @@
+QUESTION 23 - THEORETICAL CALCULATION
+
+Given:
+
+Power P = 120 kW
+
+Voltage V = 400 V
+
+Initial Power Factor = 0.75
+
+Improved Power Factor = 0.96
+
+--------------------------------------------------
+
+1. Current Before Power Factor Correction
+
+I1
+
+= P/(√3 × V × pf1)
+
+= 120000/(1.732 × 400 × 0.75)
+
+= 120000/519.60
+
+= 230.94 A
+
+--------------------------------------------------
+
+2. Current After Power Factor Correction
+
+I2
+
+= P/(√3 × V × pf2)
+
+= 120000/(1.732 × 400 × 0.96)
+
+= 120000/665.09
+
+= 180.42 A
+
+--------------------------------------------------
+
+3. Percentage Reduction in Current
+
+% Reduction
+
+= ((I1 - I2)/I1) × 100
+
+= ((230.94 - 180.42)/230.94) × 100
+
+= 21.88 %
+
+--------------------------------------------------
+
+RESULT
+
+Current Before Correction = 230.94 A
+
+Current After Correction = 180.42 A
+
+Percentage Reduction = 21.88 %
