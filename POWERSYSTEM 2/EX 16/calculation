@@ -1,0 +1,93 @@
+QUESTION 16 - THEORETICAL CALCULATION
+
+Given:
+
+Amplifier Gain KA = 10
+
+Amplifier Time Constant TA = 0.1 sec
+
+Exciter Gain KE = 1
+
+Exciter Time Constant TE = 0.4 sec
+
+Generator Gain KG = 1
+
+Generator Time Constant TG = 1 sec
+
+Sensor Gain KR = 1
+
+Sensor Time Constant TR = 0.05 sec
+
+--------------------------------------------------
+
+1. Amplifier Transfer Function
+
+GA(s)
+
+= KA/(1 + TAs)
+
+= 10/(1 + 0.1s)
+
+--------------------------------------------------
+
+2. Exciter Transfer Function
+
+GE(s)
+
+= KE/(1 + TEs)
+
+= 1/(1 + 0.4s)
+
+--------------------------------------------------
+
+3. Generator Transfer Function
+
+GG(s)
+
+= KG/(1 + TGs)
+
+= 1/(1 + s)
+
+--------------------------------------------------
+
+4. Sensor Transfer Function
+
+GR(s)
+
+= KR/(1 + TRs)
+
+= 1/(1 + 0.05s)
+
+--------------------------------------------------
+
+5. Open Loop Transfer Function
+
+G(s)
+
+= GA(s) × GE(s) × GG(s)
+
+= [10/(1+0.1s)]
+  [1/(1+0.4s)]
+  [1/(1+s)]
+
+--------------------------------------------------
+
+6. Closed Loop Transfer Function
+
+T(s)
+
+= G(s) / [1 + G(s)GR(s)]
+
+--------------------------------------------------
+
+RESULT
+
+Amplifier = 10/(1+0.1s)
+
+Exciter = 1/(1+0.4s)
+
+Generator = 1/(1+s)
+
+Sensor = 1/(1+0.05s)
+
+AVR Simulink model developed and step response obtained.
