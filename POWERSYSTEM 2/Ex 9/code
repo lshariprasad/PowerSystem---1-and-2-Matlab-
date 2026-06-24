@@ -1,0 +1,32 @@
+clc;
+clear;
+close all;
+
+R = 0.03;
+Tg = 0.2;
+
+% Governor Transfer Function
+num = 1;
+den = [Tg 1];
+
+G = tf(num,den);
+
+% Step Response
+figure;
+step(G);
+grid on;
+title('Governor Step Response');
+
+% Droop Characteristics
+Load = 0:10:100;
+Frequency = 50 - (R*50)*(Load/100);
+
+figure;
+plot(Load,Frequency,'LineWidth',2);
+grid on;
+xlabel('Load (%)');
+ylabel('Frequency (Hz)');
+title('Droop Characteristics');
+
+fprintf('Governor Droop R = %.2f\n',R);
+fprintf('Governor Time Constant Tg = %.2f sec\n',Tg);
