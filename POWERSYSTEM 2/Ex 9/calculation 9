@@ -1,0 +1,63 @@
+QUESTION 9 - THEORETICAL CALCULATION
+
+Given:
+
+Droop Constant (R) = 0.03
+
+Governor Time Constant (Tg) = 0.2 sec
+
+Nominal Frequency = 50 Hz
+
+--------------------------------------------------
+
+1. Governor Transfer Function
+
+G(s) = 1 / (1 + Tg s)
+
+Substituting Tg = 0.2
+
+G(s) = 1 / (1 + 0.2s)
+
+--------------------------------------------------
+
+2. Frequency Drop at Full Load
+
+Δf = R × f
+
+   = 0.03 × 50
+
+   = 1.5 Hz
+
+--------------------------------------------------
+
+3. Full Load Frequency
+
+fFL = 50 - 1.5
+
+     = 48.5 Hz
+
+--------------------------------------------------
+
+4. Droop Characteristics
+
+At No Load:
+
+Frequency = 50 Hz
+
+At Full Load:
+
+Frequency = 48.5 Hz
+
+--------------------------------------------------
+
+RESULT
+
+Governor Transfer Function
+
+G(s) = 1 / (1 + 0.2s)
+
+Frequency Drop = 1.5 Hz
+
+No Load Frequency = 50 Hz
+
+Full Load Frequency = 48.5 Hz
