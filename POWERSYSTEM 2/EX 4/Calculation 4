@@ -1,0 +1,75 @@
+QUESTION 4 - THEORETICAL CALCULATION
+
+Given:
+
+Load (MW) = [40 55 25 15 40 60]
+
+Time (hrs) = [6 4 2 4 4 4]
+
+--------------------------------------------------
+
+1. Total Energy Generated
+
+Energy = Σ(Load × Time)
+
+       = (40×6) + (55×4) + (25×2) + (15×4) + (40×4) + (60×4)
+
+       = 240 + 220 + 50 + 60 + 160 + 240
+
+       = 970 MWh
+
+--------------------------------------------------
+
+2. Average Load
+
+Average Load = Total Energy / 24
+
+             = 970 / 24
+
+             = 40.42 MW
+
+--------------------------------------------------
+
+3. Maximum Demand
+
+Maximum Demand = 60 MW
+
+--------------------------------------------------
+
+4. Load Factor
+
+Load Factor = Average Load / Maximum Demand
+
+            = 40.42 / 60
+
+            = 0.6736
+
+            = 67.36 %
+
+--------------------------------------------------
+
+5. Demand Factor
+
+Assume Connected Load = 100 MW
+
+Demand Factor = Maximum Demand / Connected Load
+
+              = 60 / 100
+
+              = 0.6
+
+              = 60 %
+
+--------------------------------------------------
+
+RESULT
+
+Total Energy Generated = 970 MWh
+
+Average Load = 40.42 MW
+
+Maximum Demand = 60 MW
+
+Load Factor = 67.36 %
+
+Demand Factor = 60 %
