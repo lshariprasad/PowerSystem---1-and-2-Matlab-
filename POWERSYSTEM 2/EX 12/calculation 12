@@ -1,0 +1,115 @@
+QUESTION 12 - THEORETICAL CALCULATION
+
+Given:
+
+Turbine Rated Output = 325 MW
+
+Nominal Frequency = 50 Hz
+
+Governor Speed Regulation R = 0.05 p.u.
+
+Inertia Constant H = 5 sec
+
+Governor Time Constant Tg = 0.2 sec
+
+Turbine Time Constant Tt = 0.5 sec
+
+Load Change = 60 MW
+
+--------------------------------------------------
+
+1. Governor Transfer Function
+
+Gg(s)
+
+= 1/(1 + Tgs)
+
+= 1/(1 + 0.2s)
+
+--------------------------------------------------
+
+2. Turbine Transfer Function
+
+Gt(s)
+
+= 1/(1 + Tts)
+
+= 1/(1 + 0.5s)
+
+--------------------------------------------------
+
+3. Power System Time Constant
+
+Tp
+
+= 2H
+
+= 2 × 5
+
+= 10 sec
+
+--------------------------------------------------
+
+4. Power System Transfer Function
+
+Gp(s)
+
+= 1/(10s + 0.8)
+
+--------------------------------------------------
+
+5. Feedback Gain
+
+1/R
+
+= 1/0.05
+
+= 20
+
+--------------------------------------------------
+
+6. Steady State Frequency Deviation
+
+Δf = -ΔPL /(D + 1/R)
+
+Assume D = 1
+
+Δf
+
+= -60 /(1 + 20)
+
+= -60/21
+
+= -2.857 Hz
+
+--------------------------------------------------
+
+7. Percentage Frequency Deviation
+
+%Δf
+
+= (2.857 / 50) × 100
+
+= 5.714 %
+
+--------------------------------------------------
+
+RESULT
+
+Governor Transfer Function
+
+Gg(s) = 1/(0.2s+1)
+
+Turbine Transfer Function
+
+Gt(s) = 1/(0.5s+1)
+
+Power System Transfer Function
+
+Gp(s) = 1/(10s+0.8)
+
+Feedback Gain = 20
+
+Steady State Frequency Deviation = -2.857 Hz
+
+Percentage Frequency Deviation = 5.714 %
