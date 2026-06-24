@@ -1,0 +1,18 @@
+clc;
+clear;
+close all;
+
+P = 100e3;      % Power in Watts
+V = 400;        % Line Voltage
+
+pf1 = 0.8;      % Initial Power Factor
+pf2 = 0.95;     % Improved Power Factor
+
+I1 = P/(sqrt(3)*V*pf1);
+I2 = P/(sqrt(3)*V*pf2);
+
+Reduction = ((I1-I2)/I1)*100;
+
+fprintf('Current Before Correction = %.2f A\n',I1);
+fprintf('Current After Correction = %.2f A\n',I2);
+fprintf('Percentage Reduction = %.2f %%\n',Reduction);
