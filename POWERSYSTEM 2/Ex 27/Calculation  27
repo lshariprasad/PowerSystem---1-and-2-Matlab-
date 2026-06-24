@@ -1,0 +1,83 @@
+QUESTION 27 - THEORETICAL CALCULATION
+
+Given:
+
+System Voltage (Vbase) = 400 kV
+
+STATCOM Rating = ±80 MVAR
+
+Voltage Variation
+
+Vstep = 0.90 p.u to 1.08 p.u
+
+Reference Voltage
+
+Vref = 1.0 p.u
+
+--------------------------------------------------
+
+Case 1
+
+Voltage Drops to
+
+V = 0.90 p.u
+
+Voltage Error
+
+e = Vref - V
+
+e = 1.0 - 0.90
+
+e = 0.10 p.u
+
+Reactive Power Injected
+
+Qinj
+
+= e × Qrating
+
+= 0.10 × 80
+
+= +8 MVAR
+
+STATCOM injects reactive power.
+
+--------------------------------------------------
+
+Case 2
+
+Voltage Rises to
+
+V = 1.08 p.u
+
+Voltage Error
+
+e = Vref - V
+
+e = 1.0 - 1.08
+
+e = -0.08 p.u
+
+Reactive Power Absorbed
+
+Qabs
+
+= -0.08 × 80
+
+= -6.4 MVAR
+
+STATCOM absorbs reactive power.
+
+--------------------------------------------------
+
+RESULT
+
+When V = 0.90 p.u
+
+STATCOM injects +8 MVAR
+
+When V = 1.08 p.u
+
+STATCOM absorbs -6.4 MVAR
+
+Bus voltage is regulated around 1.0 p.u
