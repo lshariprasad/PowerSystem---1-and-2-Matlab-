@@ -1,0 +1,61 @@
+QUESTION 22 - THEORETICAL CALCULATION
+
+Given:
+
+Power P = 200 kW
+
+Voltage V = 440 V
+
+Initial Power Factor = 0.60
+
+Improved Power Factor = 0.92
+
+--------------------------------------------------
+
+1. Current Before Power Factor Correction
+
+I1
+
+= P/(√3 × V × pf1)
+
+= 200000/(1.732 × 440 × 0.60)
+
+= 200000/457.25
+
+= 437.39 A
+
+--------------------------------------------------
+
+2. Current After Power Factor Correction
+
+I2
+
+= P/(√3 × V × pf2)
+
+= 200000/(1.732 × 440 × 0.92)
+
+= 200000/701.11
+
+= 285.26 A
+
+--------------------------------------------------
+
+3. Percentage Reduction in Current
+
+% Reduction
+
+= ((I1 - I2)/I1) × 100
+
+= ((437.39 - 285.26)/437.39) × 100
+
+= 34.78 %
+
+--------------------------------------------------
+
+RESULT
+
+Current Before Correction = 437.39 A
+
+Current After Correction = 285.26 A
+
+Percentage Reduction = 34.78 %
