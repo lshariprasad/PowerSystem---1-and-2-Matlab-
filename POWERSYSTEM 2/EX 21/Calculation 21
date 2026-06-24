@@ -1,0 +1,61 @@
+QUESTION 21 - THEORETICAL CALCULATION
+
+Given:
+
+Power P = 150 kW
+
+Voltage V = 415 V
+
+Initial Power Factor = 0.70
+
+Improved Power Factor = 0.95
+
+--------------------------------------------------
+
+1. Current Before Power Factor Correction
+
+I1
+
+= P/(√3 × V × pf1)
+
+= 150000/(1.732 × 415 × 0.70)
+
+= 150000/503.18
+
+= 298.10 A
+
+--------------------------------------------------
+
+2. Current After Power Factor Correction
+
+I2
+
+= P/(√3 × V × pf2)
+
+= 150000/(1.732 × 415 × 0.95)
+
+= 150000/683.03
+
+= 219.61 A
+
+--------------------------------------------------
+
+3. Percentage Reduction in Current
+
+% Reduction
+
+= ((I1 - I2)/I1) × 100
+
+= ((298.10 - 219.61)/298.10) × 100
+
+= 26.33 %
+
+--------------------------------------------------
+
+RESULT
+
+Current Before Correction = 298.10 A
+
+Current After Correction = 219.61 A
+
+Percentage Reduction = 26.33 %
