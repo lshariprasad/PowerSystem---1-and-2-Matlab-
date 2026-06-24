@@ -1,0 +1,19 @@
+clc;
+clear;
+close all;
+
+syms P1 P2
+
+% Incremental Cost Equations
+eq1 = 20 + 0.2*P1 == 30 + 0.2*P2;
+
+% Power Balance Equation
+eq2 = P1 + P2 == 200;
+
+sol = solve([eq1 eq2],[P1 P2]);
+
+P1 = double(sol.P1);
+P2 = double(sol.P2);
+
+fprintf('Generator 1 Output P1 = %.2f MW\n',P1);
+fprintf('Generator 2 Output P2 = %.2f MW\n',P2);
