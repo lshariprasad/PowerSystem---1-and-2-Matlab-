@@ -1,0 +1,18 @@
+clc;
+clear;
+close all;
+
+P = 150e3;
+V = 415;
+
+pf1 = 0.70;
+pf2 = 0.95;
+
+I1 = P/(sqrt(3)*V*pf1);
+I2 = P/(sqrt(3)*V*pf2);
+
+Reduction = ((I1-I2)/I1)*100;
+
+fprintf('Current Before Correction = %.2f A\n',I1);
+fprintf('Current After Correction = %.2f A\n',I2);
+fprintf('Percentage Reduction = %.2f %%\n',Reduction);
