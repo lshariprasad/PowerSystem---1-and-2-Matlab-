@@ -1,0 +1,61 @@
+QUESTION 20 - THEORETICAL CALCULATION
+
+Given:
+
+Power P = 100 kW
+
+Line Voltage V = 400 V
+
+Initial Power Factor = 0.8
+
+Improved Power Factor = 0.95
+
+--------------------------------------------------
+
+1. Current Before Power Factor Correction
+
+I1
+
+= P / (√3 × V × pf1)
+
+= 100000 / (1.732 × 400 × 0.8)
+
+= 100000 / 554.24
+
+= 180.42 A
+
+--------------------------------------------------
+
+2. Current After Power Factor Correction
+
+I2
+
+= P / (√3 × V × pf2)
+
+= 100000 / (1.732 × 400 × 0.95)
+
+= 100000 / 658.16
+
+= 151.93 A
+
+--------------------------------------------------
+
+3. Percentage Reduction in Current
+
+% Reduction
+
+= ((I1 - I2)/I1) × 100
+
+= ((180.42 - 151.93)/180.42) × 100
+
+= 15.79 %
+
+--------------------------------------------------
+
+RESULT
+
+Current Before Correction = 180.42 A
+
+Current After Correction = 151.93 A
+
+Percentage Reduction = 15.79 %
