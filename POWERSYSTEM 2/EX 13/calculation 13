@@ -1,0 +1,87 @@
+QUESTION 13 - THEORETICAL CALCULATION
+
+Given:
+
+F1 = 1.5 + 20PG1 + 0.1PG1²
+
+F2 = 1.9 + 30PG2 + 0.1PG2²
+
+Total Load Demand
+
+PG1 + PG2 = 200 MW
+
+--------------------------------------------------
+
+1. Incremental Cost of Generator 1
+
+dF1/dPG1
+
+= 20 + 0.2PG1
+
+--------------------------------------------------
+
+2. Incremental Cost of Generator 2
+
+dF2/dPG2
+
+= 30 + 0.2PG2
+
+--------------------------------------------------
+
+3. Economic Dispatch Condition
+
+dF1/dPG1 = dF2/dPG2
+
+20 + 0.2PG1
+
+=
+
+30 + 0.2PG2
+
+--------------------------------------------------
+
+4. Rearranging
+
+0.2PG1 - 0.2PG2 = 10
+
+PG1 - PG2 = 50
+
+--------------------------------------------------
+
+5. Power Balance Equation
+
+PG1 + PG2 = 200
+
+--------------------------------------------------
+
+6. Solving
+
+PG1 - PG2 = 50
+
+PG1 + PG2 = 200
+
+------------------
+
+2PG1 = 250
+
+PG1 = 125 MW
+
+--------------------------------------------------
+
+7. Substitute in Power Balance
+
+125 + PG2 = 200
+
+PG2 = 75 MW
+
+--------------------------------------------------
+
+RESULT
+
+Generator 1 Output
+
+PG1 = 125 MW
+
+Generator 2 Output
+
+PG2 = 75 MW
