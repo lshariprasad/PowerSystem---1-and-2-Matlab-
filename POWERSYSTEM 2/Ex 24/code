@@ -1,0 +1,18 @@
+clc;
+clear;
+close all;
+
+z = [1.02;
+     0.98;
+     1.03];
+
+H = [1 0;
+     0 1;
+     1 1];
+
+W = eye(3);
+
+x = inv(H'*W*H)*H'*W*z;
+
+fprintf('State Variable x1 = %.4f\n',x(1));
+fprintf('State Variable x2 = %.4f\n',x(2));
