@@ -1,0 +1,38 @@
+clc;
+clear;
+close all;
+
+Vbase = 230;
+Qrating = 50;
+
+Vstep = [0.92 1.07];
+
+t = 0:0.01:10;
+
+V = ones(size(t));
+
+V(t>=2 & t<5) = 0.92;
+V(t>=5) = 1.07;
+
+Vref = ones(size(t));
+
+Qinj = (Vref - V)*Qrating;
+
+figure;
+subplot(2,1,1)
+plot(t,V,'LineWidth',2)
+grid on
+xlabel('Time (s)')
+ylabel('Voltage (p.u)')
+title('Bus Voltage Variation')
+
+subplot(2,1,2)
+plot(t,Qinj,'LineWidth',2)
+grid on
+xlabel('Time (s)')
+ylabel('Reactive Power (MVAR)')
+title('STATCOM Reactive Power Injection')
+
+fprintf('System Voltage = %.0f kV\n',Vbase);
+fprintf('STATCOM Rating = +/- %.0f MVAR\n',Qrating);
+fprintf('Voltage Range = %.2f p.u to %.2f p.u\n',Vstep(1),Vstep(2));
